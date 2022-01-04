@@ -1,0 +1,74 @@
+/*INDEX*/
+
+.contenedor{
+    display: grid;
+    margin-top: 50px;
+    margin-left: 120px;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "carousel textoIndex";
+}
+
+.carousel{
+    grid-area: carousel{
+        margin: 50px;
+    }
+}
+.textoIndex{
+    grid-area: textoIndex{
+    padding: 50px;
+    margin: 50px;
+    font-size: 1rem;
+    text-align: left;
+}
+}
+/*CARDS*/
+.tarjetas{
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    min-height: 200px;
+    :hover{
+        transform:scale(0.95,0.95)
+}
+}
+.card-title{
+    background-color:$bg_color5 ;
+}
+.card1{
+    font-size: 0.8rem;
+    border:$bg_color2 2px solid;
+}
+.card2{
+    font-size: 0.8rem;
+    border:$bg_color2 2px solid;
+}
+.card3{
+    font-size: 0.8rem;
+    border:$bg_color2 2px solid;
+}
+.card4{
+    font-size: 0.8rem;
+    border:$bg_color2 2px solid;
+}
+
+.card-title{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+    min-height: 200px;
+    padding-top: 30px;
+}
+
+.list-group{
+    height: -100px;
+}

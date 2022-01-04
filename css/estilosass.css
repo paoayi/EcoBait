@@ -1,0 +1,661 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dee3e5), color-stop(#b6c0cb), to(white));
+  background: linear-gradient(to top, #dee3e5, #b6c0cb, white);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.logo {
+  margin-left: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: medium;
+  text-align: center;
+  color: #2256a5;
+  text-align: left;
+}
+
+/*BARRA DE NAVEGACIÓN*/
+#navbarNav {
+  background-color: #c2d2e9;
+  opacity: 80%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#navbarNav a {
+  color: #161d6f;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbarNav a:hover {
+  color: #2256a5;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+}
+
+.nav-item-color {
+  border: 2px #2256a5 solid;
+}
+
+.arriba {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/*INDEX*/
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 50px;
+  margin-left: 120px;
+  padding: 50px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "carousel textoIndex";
+}
+
+.carousel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: carousel;
+  grid-area-margin: 50px;
+}
+
+.textoIndex {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: textoIndex;
+  grid-area-padding: 50px;
+  grid-area-margin: 50px;
+  grid-area-font-size: 1rem;
+  grid-area-text-align: left;
+}
+
+/*CARDS*/
+.tarjetas {
+  width: 90%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  text-align: center;
+  min-height: 200px;
+}
+
+.tarjetas :hover {
+  -webkit-transform: scale(0.95, 0.95);
+          transform: scale(0.95, 0.95);
+}
+
+.card-title {
+  background-color: #c2d2e9;
+}
+
+.card1 {
+  font-size: 0.8rem;
+  border: #b6c0cb 2px solid;
+}
+
+.card2 {
+  font-size: 0.8rem;
+  border: #b6c0cb 2px solid;
+}
+
+.card3 {
+  font-size: 0.8rem;
+  border: #b6c0cb 2px solid;
+}
+
+.card4 {
+  font-size: 0.8rem;
+  border: #b6c0cb 2px solid;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+  min-height: 200px;
+  padding-top: 30px;
+}
+
+.list-group {
+  height: -100px;
+}
+
+/*NOSOTROS*/
+.nosotros {
+  margin-bottom: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  background-color: #c7ffd8;
+  margin: 50px;
+  border: #1e4d79 solid 2px;
+}
+
+.nosotros h2 {
+  color: #706047;
+  font-weight: normal;
+  font-size: 2rem;
+  margin: 10px;
+  padding: 2px;
+}
+
+.nosotros:hover {
+  -webkit-transform: translate(100px, 30px);
+          transform: translate(100px, 30px);
+}
+
+.nuestraMision {
+  margin-bottom: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  background-color: antiquewhite;
+  margin: 50px;
+  border: #1e4d79 solid 2px;
+}
+
+.nuestraMision h2 {
+  color: #706047;
+  font-weight: normal;
+  font-size: 2rem;
+  margin: 10px;
+  padding: 2px;
+}
+
+.nuestraMision:hover {
+  -webkit-transform: translate(100px, 30px);
+          transform: translate(100px, 30px);
+}
+
+.listaRazones {
+  margin-bottom: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  background-color: antiquewhite;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #b6c0cb;
+  opacity: 0.9;
+  margin: 50px;
+  border: #1e4d79 solid 2px;
+}
+
+.listaRazones h2 {
+  color: #706047;
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin: 10px;
+  padding: 2px;
+}
+
+.listaRazones:hover {
+  -webkit-transform: translate(100px, 30px);
+          transform: translate(100px, 30px);
+}
+
+/*COMPAÑIAS*/
+/*GRID CIAS*/
+.contenedorCias {
+  width: 90vw;
+  margin: 10px;
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 20px;
+      grid-template-areas: "textoCias1" "textoCias2";
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.textoCias1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: textoCias1;
+  font-size: 1rem;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.textoCias2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: textoCias2;
+  margin-left: 100px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.contenedorEmpresas {
+  width: 90vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 100px;
+  gap: 50px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+}
+
+.contenedorEmpresas :hover {
+  -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+}
+
+/*SEGUROS*/
+.seguros {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 120px;
+}
+
+.botones {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn-primary {
+  margin-left: 50px;
+  background-color: #5e83ba;
+}
+
+.dropdown {
+  margin-top: 50px;
+}
+
+/*CONTACTO*/
+.conteiner {
+  width: 90%;
+  margin: 20px;
+}
+
+/*==========================
+TABLET   
+=============================*/
+/*INDEX*/
+@media only screen and (max-width: 768px) {
+  .contenedor {
+    display: -ms-grid;
+    display: grid;
+    margin-top: 50px;
+    margin-left: 120px;
+    padding: 50px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "carousel" "textoIndex";
+  }
+  .textoIndex {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: textoIndex;
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tarjetas {
+    width: 90%;
+    padding: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 100px;
+    text-align: center;
+    min-height: 100px;
+  }
+  .card-title {
+    font-size: 0.8rem;
+  }
+  .card-text {
+    text-align: center;
+    min-height: 100px;
+  }
+  .card-body {
+    min-height: 100px;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .list-group {
+    height: -100px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+/*COMPAÑIAS*/
+/*GRID CIAS*/
+@media (min-width: 768px) {
+  .contenedorCias {
+    width: 80vw;
+    margin: 10px;
+    margin-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 20px;
+        grid-template-areas: "textoCias1" "textoCias2";
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+  .textoCias1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: textoCias1;
+  }
+  .textoCias2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: textoCias2;
+  }
+  .contenedorEmpresas {
+    width: 90vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding-bottom: 100px;
+    gap: 50px;
+    padding: 120px;
+    margin-left: 20px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .contenedorEmpresas :hover {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+}
+
+/*SEGUROS*/
+@media only screen and (min-width: 768px) {
+  .seguros {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 10px;
+  }
+  .btn-primary {
+    margin-block: 20px;
+  }
+  .botones {
+    text-align: center;
+    margin-left: 200px;
+  }
+  .btn-primary {
+    background-color: #5e83ba;
+    margin-right: 200px;
+    margin-left: 90px;
+  }
+  .dropdown {
+    gap: 50px;
+  }
+}
+
+/*==========================
+CELULARES 
+=============================*/
+/*INDEX*/
+@media only screen and (max-width: 480px) {
+  .contenedor {
+    display: -ms-grid;
+    display: grid;
+    margin-left: 0px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "carousel  textoIndex";
+  }
+  .carousel {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: carousel;
+  }
+  .textoIndex {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: textoIndex;
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) and (max-width: 480px) {
+  .tarjetas {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    text-align: left;
+    margin: 0px;
+  }
+  .card-title {
+    font-size: 0.8rem;
+  }
+  .card-text {
+    text-align: center;
+    min-height: 100px;
+  }
+  .card-body {
+    min-height: 50px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .card-text {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .list-group {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .card1 {
+    height: -100px;
+    margin-bottom: 50px;
+  }
+  .card2 {
+    height: -100px;
+    margin-bottom: 50px;
+  }
+  .card3 {
+    height: -100px;
+    margin-bottom: 50px;
+  }
+  .card4 {
+    height: -100px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /*NOSOTROS*/
+}
+
+@media only screen and (max-width: 480px) and (max-width: 480px) {
+  .nosotros {
+    font-size: 0.8rem;
+    width: 70%;
+  }
+  .nuestraMision {
+    font-size: 0.8rem;
+    width: 70%;
+  }
+  .listaRazones {
+    font-size: 0.8rem;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /*COMPAÑIAS*/
+}
+
+@media only screen and (max-width: 480px) and (max-width: 480px) {
+  .contenedorCias {
+    width: 80vw;
+    margin: 10px;
+    margin-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 20px;
+        grid-template-areas: "textoCias1" "textoCias2";
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+  .textoCias1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: textoCias1;
+    font-size: 0.8rem;
+  }
+  .textoCias2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: textoCias2;
+    font-size: 0.8rem;
+  }
+  .contenedorEmpresas {
+    width: 90vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-bottom: 100px;
+    gap: 50px;
+    text-align: justify;
+    margin-left: 110px;
+  }
+  .contenedorEmpresas :hover {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /*SEGUROS*/
+}
+
+@media only screen and (max-width: 480px) and (min-width: 480px) {
+  .seguros {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 10px;
+  }
+  .btn-primary {
+    margin-block: 20px;
+  }
+  .botones {
+    text-align: center;
+    margin-left: 200px;
+  }
+  .btn-primary {
+    background-color: #5e83ba;
+    margin-right: 150px;
+  }
+  .dropdown {
+    gap: 50px;
+  }
+}
+/*# sourceMappingURL=estilosass.css.map */
